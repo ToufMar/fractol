@@ -6,7 +6,7 @@
 /*   By: mroturea <mroturea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/31 18:09:00 by mroturea          #+#    #+#             */
-/*   Updated: 2016/06/02 18:01:54 by mroturea         ###   ########.fr       */
+/*   Updated: 2016/06/02 18:45:18 by mroturea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	init_julia(t_struct *s)
 	s->y1 = -1.319;
 	s->y2 = 3;
 	s->zoom = 417.7;
-	s->iter_max = 126;
+	s->iter_max = 85;
 }
 
 void	julia(t_struct *s)

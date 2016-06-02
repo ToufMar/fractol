@@ -6,7 +6,7 @@
 /*   By: mroturea <mroturea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/31 11:54:04 by mroturea          #+#    #+#             */
-/*   Updated: 2016/06/02 18:08:05 by mroturea         ###   ########.fr       */
+/*   Updated: 2016/06/02 18:52:14 by mroturea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@
 # include <math.h>
 # include <stdio.h>
 # include <stdlib.h>
-# define HGT 1280
-# define WDT 1080
+# define HGT 800
+# define WDT 800
 
 # define ERROR_NAME {ft_putstr("Wrong name: Write :\n->mandelbrot\n->julia\n->tricorn\n->medusa"); exit(0);}
 

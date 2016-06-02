@@ -6,7 +6,7 @@
 /*   By: mroturea <mroturea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/06/01 16:14:25 by mroturea          #+#    #+#             */
-/*   Updated: 2016/06/02 18:00:05 by mroturea         ###   ########.fr       */
+/*   Updated: 2016/06/02 19:20:14 by mroturea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,8 +38,6 @@ int		ft_key_print(int key, t_struct *s)
 		if (s->color == 6)
 		s->color = 0;
 	}
-  printf("%d\niter = %d\nx1 = %f\n y1 = %f\nzoom = %f\n s->color = %d\n", key, s->iter_max, s->x1, s->y1, s->zoom, s->color);
-  printf("vert=%d, bleu = %d, rouge = %d\n", s->green, s->blue, s->red);
 	if (key == 53)
 	{
 		exit(2);
@@ -55,9 +53,15 @@ int		ft_key_print(int key, t_struct *s)
 	if (key == 123)
 		s->x1 += 0.01;
 	if (key == 69)
+	{
+		s->iter_max += 1;
 		s->zoom *= 1.05;
+	}
 	if (key == 78)
+	{
+		s->iter_max -= 1;
 		s->zoom *= 0.97;
+	}
 	if (key == 75)
 		s->iter_max += 1;
 	if (key == 67)
@@ -92,12 +96,13 @@ int		key_mouse(int key, int x, int y, t_struct *s)
 		if (key == 4)
 		{
 			s->zoom *= 1.1;
+			s->iter_max += 1;
 			s->x1 = xt - (x / s->zoom);
 			s->y1 = yt - (y / s->zoom);
 		}
 		else if (key == 5)
 		{
-      printf("zoom_mouse = %f", s->zoom);
+			s->iter_max -= 1;
 			s->zoom *= 0.9;
 			s->x1 = xt - (x / s->zoom);
 			s->y1 = yt - (y / s->zoom);

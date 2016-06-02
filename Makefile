@@ -6,7 +6,7 @@
 #    By: mroturea <mroturea@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/05/31 20:43:27 by mroturea          #+#    #+#              #
-#    Updated: 2016/06/02 17:24:00 by mroturea         ###   ########.fr        #
+#    Updated: 2016/06/02 19:01:00 by mroturea         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ CC = gcc
 
 LIB = libft/libft.a
 
-FLAG = -Wall -Wextra -Werror -O3
+FLAG = -Wall -Wextra -Werror -O3 -Ofast
 
 LIBGRPH = -lmlx -framework OpenGL -framework Appkit
 

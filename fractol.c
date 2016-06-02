@@ -6,7 +6,7 @@
 /*   By: mroturea <mroturea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/31 11:57:26 by mroturea          #+#    #+#             */
-/*   Updated: 2016/06/02 18:10:44 by mroturea         ###   ########.fr       */
+/*   Updated: 2016/06/02 18:39:38 by mroturea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ void	choose_type(t_struct *s)
 	tricorn(s);
 	if (s->type == 4)
 		medusa(s);
-
+    mlx_put_image_to_window(s->mlx, s->win, s->mlx_img, 0, 0);
 }
 
 void	put_img(t_struct *s)
@@ -66,7 +66,6 @@ void	put_img(t_struct *s)
 	choose_type(s);
 	mlx_hook(s->win, 2, 3, ft_key_print, s);
 	mlx_mouse_hook(s->win, key_mouse, s);
-  mlx_put_image_to_window(s->mlx, s->win, s->mlx_img, 0, 0);
   mlx_loop(s->mlx);
 }
 
