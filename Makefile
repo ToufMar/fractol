@@ -6,7 +6,7 @@
 #    By: mroturea <mroturea@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/05/31 20:43:27 by mroturea          #+#    #+#              #
-#    Updated: 2016/06/01 16:19:11 by mroturea         ###   ########.fr        #
+#    Updated: 2016/06/02 17:24:00 by mroturea         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,7 @@ LIBGRPH = -lmlx -framework OpenGL -framework Appkit
 
 INC = fractol.h
 
-OBJ =  julia.o fractol.o tricorn.o mandel.o medusa.o commande.o
+OBJ =  julia_tricorn.o fractol.o mandel_medusa.o commande.o color.o
 
 all: $(NAME)
 
